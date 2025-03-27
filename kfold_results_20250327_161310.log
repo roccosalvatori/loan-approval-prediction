@@ -1,0 +1,194 @@
+Loading dataset...
+[16:13:10] Dataset loaded (Time elapsed: 0.04s)
+
+Using 2284 samples for testing
+
+Initial class distribution:
+Accept
+1    0.827933
+0    0.172067
+Name: proportion, dtype: float64
+[16:13:11] Class distribution analyzed (Time elapsed: 0.05s)
+
+Preprocessing data...
+Feature shape after encoding: (2284, 6408)
+[16:13:11] Dummy encoding completed (Time elapsed: 0.06s)
+[16:13:11] Missing values imputed (Time elapsed: 0.47s)
+Applying PCA to reduce dimensionality...
+Initial feature shape: (2284, 6408)
+Creating PCA variance plot...
+
+Variance explained by first 10 components:
+Component 1: 0.0011 (0.0011 cumulative)
+Component 2: 0.0010 (0.0022 cumulative)
+Component 3: 0.0010 (0.0031 cumulative)
+Component 4: 0.0010 (0.0041 cumulative)
+Component 5: 0.0009 (0.0051 cumulative)
+Component 6: 0.0009 (0.0060 cumulative)
+Component 7: 0.0009 (0.0068 cumulative)
+Component 8: 0.0009 (0.0077 cumulative)
+Component 9: 0.0009 (0.0086 cumulative)
+Component 10: 0.0009 (0.0094 cumulative)
+[16:13:17] PCA variance plot created (Time elapsed: 6.36s)
+
+Number of components needed for 95% variance: 2027
+Total variance explained: 1.0000
+Variance explained by first component: 0.0011
+Variance explained by first 5 components: 0.0051
+[16:13:17] PCA components analyzed (Time elapsed: 6.36s)
+Applying SMOTE for class balancing...
+[16:13:17] SMOTE resampling completed (Time elapsed: 6.45s)
+
+Resampled class distribution:
+Accept
+1    0.5
+0    0.5
+Name: proportion, dtype: float64
+[16:13:17] Resampled distribution analyzed (Time elapsed: 6.45s)
+[16:13:21]   Cross-validation completed for KNN (Time elapsed: 3.64s)
+[16:13:21]   Fold 1 completed (Time elapsed: 0.23s)
+[16:13:21]   Fold 2 completed (Time elapsed: 0.17s)
+[16:13:21]   Fold 3 completed (Time elapsed: 0.17s)
+[16:13:21]   Fold 4 completed (Time elapsed: 0.17s)
+[16:13:21]   Fold 5 completed (Time elapsed: 0.18s)
+[16:13:22] Model KNN evaluation completed (Time elapsed: 4.63s)
+[16:13:23]   Cross-validation completed for LogReg (Time elapsed: 1.79s)
+[16:13:24]   Fold 1 completed (Time elapsed: 0.25s)
+[16:13:24]   Fold 2 completed (Time elapsed: 0.18s)
+[16:13:24]   Fold 3 completed (Time elapsed: 0.17s)
+[16:13:24]   Fold 4 completed (Time elapsed: 0.18s)
+[16:13:24]   Fold 5 completed (Time elapsed: 0.18s)
+[16:13:24] Model LogReg evaluation completed (Time elapsed: 2.82s)
+[16:13:27]   Cross-validation completed for SVC_rbf (Time elapsed: 3.11s)
+[16:13:29]   Fold 1 completed (Time elapsed: 1.29s)
+[16:13:30]   Fold 2 completed (Time elapsed: 1.19s)
+[16:13:31]   Fold 3 completed (Time elapsed: 1.17s)
+[16:13:32]   Fold 4 completed (Time elapsed: 1.20s)
+[16:13:34]   Fold 5 completed (Time elapsed: 1.18s)
+[16:13:34] Model SVC_rbf evaluation completed (Time elapsed: 9.20s)
+[16:13:36]   Cross-validation completed for SVC_poly (Time elapsed: 2.59s)
+[16:13:37]   Fold 1 completed (Time elapsed: 1.01s)
+[16:13:38]   Fold 2 completed (Time elapsed: 0.90s)
+[16:13:39]   Fold 3 completed (Time elapsed: 0.87s)
+[16:13:40]   Fold 4 completed (Time elapsed: 0.88s)
+[16:13:41]   Fold 5 completed (Time elapsed: 0.88s)
+[16:13:41] Model SVC_poly evaluation completed (Time elapsed: 7.19s)
+[16:13:43]   Cross-validation completed for SVC_sigmoid (Time elapsed: 2.70s)
+[16:13:45]   Fold 1 completed (Time elapsed: 1.13s)
+[16:13:46]   Fold 2 completed (Time elapsed: 1.03s)
+[16:13:47]   Fold 3 completed (Time elapsed: 1.08s)
+[16:13:48]   Fold 4 completed (Time elapsed: 1.08s)
+[16:13:49]   Fold 5 completed (Time elapsed: 1.05s)
+[16:13:49] Model SVC_sigmoid evaluation completed (Time elapsed: 8.12s)
+[16:13:51]   Cross-validation completed for LinearSVC (Time elapsed: 2.19s)
+[16:13:51]   Fold 1 completed (Time elapsed: 0.26s)
+[16:13:52]   Fold 2 completed (Time elapsed: 0.29s)
+[16:13:52]   Fold 3 completed (Time elapsed: 0.24s)
+[16:13:52]   Fold 4 completed (Time elapsed: 0.20s)
+[16:13:52]   Fold 5 completed (Time elapsed: 0.24s)
+[16:13:52] Model LinearSVC evaluation completed (Time elapsed: 3.48s)
+[16:13:54]   Cross-validation completed for GaussianNB (Time elapsed: 1.16s)
+[16:13:54]   Fold 1 completed (Time elapsed: 0.23s)
+[16:13:54]   Fold 2 completed (Time elapsed: 0.17s)
+[16:13:54]   Fold 3 completed (Time elapsed: 0.16s)
+[16:13:54]   Fold 4 completed (Time elapsed: 0.16s)
+[16:13:54]   Fold 5 completed (Time elapsed: 0.17s)
+[16:13:54] Model GaussianNB evaluation completed (Time elapsed: 2.12s)
+[16:13:56]   Cross-validation completed for DecisionTree (Time elapsed: 1.28s)
+[16:13:56]   Fold 1 completed (Time elapsed: 0.38s)
+[16:13:56]   Fold 2 completed (Time elapsed: 0.34s)
+[16:13:57]   Fold 3 completed (Time elapsed: 0.35s)
+[16:13:57]   Fold 4 completed (Time elapsed: 0.32s)
+[16:13:58]   Fold 5 completed (Time elapsed: 0.35s)
+[16:13:58] Model DecisionTree evaluation completed (Time elapsed: 3.08s)
+[16:14:01]   Cross-validation completed for RandomForest (Time elapsed: 3.02s)
+[16:14:02]   Fold 1 completed (Time elapsed: 1.40s)
+[16:14:03]   Fold 2 completed (Time elapsed: 1.39s)
+[16:14:05]   Fold 3 completed (Time elapsed: 1.38s)
+[16:14:06]   Fold 4 completed (Time elapsed: 1.32s)
+[16:14:07]   Fold 5 completed (Time elapsed: 1.42s)
+[16:14:08] Model RandomForest evaluation completed (Time elapsed: 9.99s)
+[16:14:11]   Cross-validation completed for MLP (Time elapsed: 2.97s)
+[16:14:12]   Fold 1 completed (Time elapsed: 1.19s)
+[16:14:13]   Fold 2 completed (Time elapsed: 1.10s)
+[16:14:14]   Fold 3 completed (Time elapsed: 0.78s)
+[16:14:14]   Fold 4 completed (Time elapsed: 0.85s)
+[16:14:15]   Fold 5 completed (Time elapsed: 1.05s)
+[16:14:16] Model MLP evaluation completed (Time elapsed: 8.02s)
+
+Detailed Results:
+
+Model: KNN
+F1 Score: 0.7524 (±0.0190)
+ROC AUC: 0.6145 (±0.0198)
+Precision: 0.8567
+Recall: 0.6711
+Train/Test F1 difference: 0.1118
+
+Model: LogReg
+F1 Score: 0.7550 (±0.0118)
+ROC AUC: 0.6927 (±0.0142)
+Precision: 0.8937
+Recall: 0.6536
+Train/Test F1 difference: 0.0090
+
+Model: SVC_rbf
+F1 Score: 0.7795 (±0.0230)
+ROC AUC: 0.6613 (±0.0130)
+Precision: 0.8699
+Recall: 0.7070
+Train/Test F1 difference: 0.0720
+
+Model: SVC_poly
+F1 Score: 0.7904 (±0.0363)
+ROC AUC: 0.6259 (±0.0312)
+Precision: 0.8599
+Recall: 0.7329
+Train/Test F1 difference: 0.0865
+
+Model: SVC_sigmoid
+F1 Score: 0.7164 (±0.0132)
+ROC AUC: 0.6588 (±0.0302)
+Precision: 0.8830
+Recall: 0.6029
+Train/Test F1 difference: -0.0187
+
+Model: LinearSVC
+F1 Score: 0.7497 (±0.0097)
+ROC AUC: 0.6949 (±0.0141)
+Precision: 0.8938
+Recall: 0.6457
+Train/Test F1 difference: 0.0143
+
+Model: GaussianNB
+F1 Score: 0.6319 (±0.0211)
+ROC AUC: 0.5948 (±0.0079)
+Precision: 0.8554
+Recall: 0.5013
+Train/Test F1 difference: 0.0246
+
+Model: DecisionTree
+F1 Score: 0.8190 (±0.0064)
+ROC AUC: 0.5570 (±0.0183)
+Precision: 0.8492
+Recall: 0.7911
+Train/Test F1 difference: 0.1810
+
+Model: RandomForest
+F1 Score: 0.8579 (±0.0107)
+ROC AUC: 0.6325 (±0.0130)
+Precision: 0.8473
+Recall: 0.8689
+Train/Test F1 difference: 0.1421
+
+Model: MLP
+F1 Score: 0.8448 (±0.0160)
+ROC AUC: 0.6425 (±0.0151)
+Precision: 0.8482
+Recall: 0.8419
+Train/Test F1 difference: 0.1160
+
+Best Models:
+Best F1-Score: RandomForest (Mean: 0.8579)
+Best ROC-AUC: LinearSVC (Mean: 0.6949)
+[16:14:16] Script completed (Time elapsed: 65.10s)
